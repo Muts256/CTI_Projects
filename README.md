@@ -65,7 +65,7 @@ The goal is to translate theoretical frameworks into **SOC-relevant defensive ac
 
 #### Cyber Kill Chain vs Defence Model Mapping
 
-| Cyber Kill Chain Phase | Attacker Objective | 6D Defensive Control | SOC / CTI Interpretation |
+| Cyber Kill Chain Phase | Attacker Objective |  Defensive Control | SOC / CTI Interpretation |
 |------------------|-------------------|----------------------|---------------------------|
 | Reconnaissance | Gather information about targets | **Detect** | Identify scanning, OSINT activity, anomalous enumeration, and threat intelligence matches via SIEM/EDR/cloud logs |
 | Weaponization | Build or prepare exploit payloads | **Deceive** | Deploy honeypots, canary tokens, decoy services, and fake assets to mislead attacker preparation |
@@ -82,7 +82,7 @@ The goal is to translate theoretical frameworks into **SOC-relevant defensive ac
 #### 1. Kill Chain Perspective
 The Cyber Kill Chain represents the **attacker’s lifecycle**, helping defenders understand the progression of an intrusion.
 
-#### 2. 6Ds Perspective
+#### 2. Defensive Perspective
 The 6Ds represent **defensive interventions** that aim to interrupt attacker progress at each stage.
 
 #### 3. SOC Reality Mapping

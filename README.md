@@ -47,3 +47,72 @@ The Diamond model is a threat intelligence framework used to analyse and model c
 | Capability | Malicious Microsoft Office macro delivering malware |
 | Infrastructure | hxxp://malicious-update.com |
 | Victim | Financial department employee at a retail company |
+
+---
+
+#### *Cyber Kill Chain vs Cyber Defence Model*
+
+
+#### *Overview*
+
+This project maps the **Cyber Kill Chain (attacker lifecycle model)** against the **defensive strategy model** used in cybersecurity operations.
+
+The goal is to translate theoretical frameworks into **SOC-relevant defensive actions**, showing how analysts can detect, disrupt, and respond to adversary activity across the attack lifecycle.
+
+> Note: This is not a hacking or offensive guide. “Destroy” in this context refers to eradication and recovery within the defender’s environment only.
+
+---
+
+#### Cyber Kill Chain vs Defence Model Mapping
+
+| Cyber Kill Chain Phase | Attacker Objective | 6D Defensive Control | SOC / CTI Interpretation |
+|------------------|-------------------|----------------------|---------------------------|
+| Reconnaissance | Gather information about targets | **Detect** | Identify scanning, OSINT activity, anomalous enumeration, and threat intelligence matches via SIEM/EDR/cloud logs |
+| Weaponization | Build or prepare exploit payloads | **Deceive** | Deploy honeypots, canary tokens, decoy services, and fake assets to mislead attacker preparation |
+| Delivery | Transmit malicious payload | **Deny** | Block malicious emails, URLs, files, and downloads using email gateways, proxies, firewalls, and web filters |
+| Exploitation | Trigger vulnerability exploitation | **Disrupt** | Prevent exploitation via patching, EDR exploit mitigation, sandboxing, and runtime protection |
+| Installation | Establish persistence | **Degrade** | Limit attacker capability using least privilege, application control, endpoint protection, and containment policies |
+| Command & Control (C2) | Maintain remote access | **Disrupt / Deny** | Detect and block beaconing, DNS tunneling, proxy abuse, and outbound C2 communication |
+| Actions on Objectives | Achieve final goal (exfiltration, sabotage, etc.) | **Destroy** | Eradicate attacker presence through host isolation, credential resets, session revocation, malware removal, and system recovery |
+
+---
+
+#### Key Interpretation Notes
+
+#### 1. Kill Chain Perspective
+The Cyber Kill Chain represents the **attacker’s lifecycle**, helping defenders understand the progression of an intrusion.
+
+#### 2. 6Ds Perspective
+The 6Ds represent **defensive interventions** that aim to interrupt attacker progress at each stage.
+
+#### 3. SOC Reality Mapping
+In a real SOC environment, these models are applied using:
+- SIEM platforms (e.g., Splunk, Microsoft Sentinel)
+- EDR solutions (e.g., Microsoft Defender for Endpoint)
+- Threat intelligence feeds (IOC + TTP enrichment)
+- Incident response playbooks
+
+---
+
+#### Important Clarification: “Destroy” in SOC Context
+
+The term **“Destroy” does NOT refer to offensive cyber operations or hacking back**.
+
+In enterprise security operations, it means:
+- Removing malware and persistence mechanisms
+- Reimaging or restoring compromised systems
+- Revoking credentials and access tokens
+- Restoring systems from known-good backups
+
+All actions remain within the **defender’s authorized environment and legal scope**.
+
+---
+
+#### Why This Matters
+
+This mapping helps SOC and CTI practitioners:
+- Understand attacker progression
+- Align detection engineering with attack stages
+- Improve response speed and decision-making
+- Translate threat intelligence into actionable defense
+

@@ -112,6 +112,51 @@ All actions remain within the **defender’s authorized environment and legal sc
 
 This mapping helps SOC and CTI practitioners:
 - Understand attacker progression
+
+---
+
+#### OODA
+```
+flowchart LR
+    A[Observe] --> B[Orient]
+    B --> C[Decide]
+    C --> D[Act]
+    D --> A
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - Align detection engineering with attack stages
 - Improve response speed and decision-making
 - Translate threat intelligence into actionable defense

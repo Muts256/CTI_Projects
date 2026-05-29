@@ -120,7 +120,7 @@ This mapping helps SOC and CTI practitioners:
 
 #### OODA
 
-The OODA loop is a decision-making framework developed by U.S. Air Force strategist John Boyd. It describes how individuals and organizations react to events and make decisions in fast-changing situations, especially in conflict, business, or competitive environments. Originally used in the military, but has been adopted into cybersecurity in the SOC
+The OODA loop is a decision-making framework developed by U.S. Air Force strategist John Boyd. It describes how individuals and organizations react to events and make decisions in fast-changing situations, especially in conflict, business, or competitive environments. Originally used in the military, but has been adopted into cybersecurity and works well in a SOC.
 
 #### What OODA stands for
 
@@ -133,3 +133,12 @@ flowchart LR
     C --> D[Act]
     D --> A
 ````
+
+#### Steps and Purpose
+
+| Step     | Purpose                                                                 | Cybersecurity Example |
+|----------|-------------------------------------------------------------------------|------------------------|
+| Observe  | Collect raw information from the environment                             | SIEM alert, log data, network traffic, EDR alert |
+| Orient   | Analyse and contextualise the information to understand what it means   | Correlate logs, identify attack patterns, assess risk |
+| Decide   | Select the best course of action based on analysis                      | Choose to isolate endpoint or escalate incident |
+| Act      | Execute the chosen response                                             | Block IP, isolate host, reset credentials |

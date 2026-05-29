@@ -118,7 +118,7 @@ This mapping helps SOC and CTI practitioners:
 
 ---
 
-#### OODA
+#### OODA Loop
 
 The OODA loop is a decision-making framework developed by U.S. Air Force strategist John Boyd. It describes how individuals and organizations react to events and make decisions in fast-changing situations, especially in conflict, business, or competitive environments. Originally used in the military, but has been adopted into cybersecurity and works well in a SOC.
 
